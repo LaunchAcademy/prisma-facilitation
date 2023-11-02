@@ -8,9 +8,10 @@ datasource db {
 }
 
 model Unicorn {
-  id          Int      @id @default(autoincrement())
-  name        String   @db.VarChar(255)
-  album       String?  @db.VarChar(255)
-  artist      String   @db.VarChar(255)
-  songNumber  Int      @db.Integer
+  id              Int       @id @default(autoincrement())
+  name            String    @db.VarChar(255)
+  age             Int       @db.Integer
+  magicalAbility  String    @db.Text
+  createdAt       DateTime  @default(now()) @db.Timestamp(6)
+  updatedAt       DateTime  @default(now()) @db.Timestamp(6)
 }
