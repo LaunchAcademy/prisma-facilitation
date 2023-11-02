@@ -1,6 +1,10 @@
 # Prisma
 
-npx migrate dev
+```no-highlight
+createdb unicorns_development
+```
+
+npx prisma migrate dev
 
 name - required
 age - integer

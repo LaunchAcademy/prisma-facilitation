@@ -4,5 +4,13 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgres://postgres:postgres@localhost:5432/prisma-test_development"
+  url      = "postgres://postgres:postgres@localhost:5432/unicorns_development"
+}
+
+model Unicorn {
+  id          Int      @id @default(autoincrement())
+  name        String   @db.VarChar(255)
+  album       String?  @db.VarChar(255)
+  artist      String   @db.VarChar(255)
+  songNumber  Int      @db.Integer
 }
