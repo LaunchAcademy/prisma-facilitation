@@ -7,14 +7,14 @@
     "e2e"
   ],
   "scripts": {
-    "build:client": "yarn workspace prisma-test-client build",
-    "dev": "yarn workspace prisma-test-server dev",
-    "dev:debug": "yarn workspace prisma-test-server dev:debug",
-    "heroku-postbuild": "yarn workspace prisma-test-client build",
-    "start": "yarn workspace prisma-test-server start",
-    "dev:cypress": "yarn workspace prisma-test-server dev:e2e",
-    "e2e:open": "yarn workspace prisma-test-e2e e2e:open",
-    "e2e:run": "yarn workspace prisma-test-e2e e2e:run"
+    "build:client": "yarn workspace unicorns-client build",
+    "dev": "yarn workspace unicorns-server dev",
+    "dev:debug": "yarn workspace unicorns-server dev:debug",
+    "heroku-postbuild": "yarn workspace unicorns-client build",
+    "start": "yarn workspace unicorns-server start",
+    "dev:cypress": "yarn workspace unicorns-server dev:e2e",
+    "e2e:open": "yarn workspace unicorns-e2e e2e:open",
+    "e2e:run": "yarn workspace unicorns-e2e e2e:run"
   },
   "engines": {
     "node": "^16.18"

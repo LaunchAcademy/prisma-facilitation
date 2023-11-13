@@ -19,7 +19,7 @@
   "private": true,
   "type": "module",
   "version": "0.0.1",
-  "name": "prisma-test-server",
+  "name": "unicorns-server",
   "engines": {
     "node": "^16.18"
   },
